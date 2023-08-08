@@ -1,6 +1,6 @@
 # Next.js App with Keycloak Integration
 
-This is a sample Next.js application that demonstrates how to integrate Keycloak for authentication using NextAuth with App router. The app allows uploading files to a storage service and showcases how to manage user sessions and authentication using Keycloak.
+This is a sample Next.js application that demonstrates how to integrate Keycloak for authentication using NextAuth with App router. The app allows uploading files to a storage service via [Siberiana API](https://github.com/dkrasnovdev/siberiana-api) and showcases how to manage user sessions and authentication using Keycloak.
 
 ## Getting Started
 
@@ -47,5 +47,3 @@ The file upload functionality is part of Siberiana's Infrastructure. More inform
 - [Siberiana API](https://github.com/dkrasnovdev/siberiana-api)
 - [Siberiana Minio](https://github.com/dkrasnovdev/siberiana-minio)
 - [Siberiana Keycloak](https://github.com/dkrasnovdev/siberiana-keycloak)
-
-
