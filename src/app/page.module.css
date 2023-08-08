@@ -1,8 +1,17 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  gap: 1rem;
+  max-width: 576px;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.session {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
