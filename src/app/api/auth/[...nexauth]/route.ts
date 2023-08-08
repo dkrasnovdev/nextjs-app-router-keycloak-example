@@ -62,6 +62,7 @@ export const authOptions: AuthOptions = {
             error: null,
           };
         } catch (e) {
+          console.error(e);
           return null as unknown as JWT;
         }
       }
