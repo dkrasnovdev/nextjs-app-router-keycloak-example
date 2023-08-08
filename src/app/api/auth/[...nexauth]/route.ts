@@ -1,3 +1,4 @@
+import { logoutRequest } from "@/lib/oidc";
 import type { AuthOptions } from "next-auth";
 import NextAuth from "next-auth/next";
 import { ProviderType } from "next-auth/providers/index";
@@ -17,6 +18,11 @@ export const authOptions: AuthOptions = {
       },
     }),
   ],
+  events: {
+    async signOut({ token }) {
+      await logoutRequest(token.refresh_token);
+    },
+  },
 };
 
 // Create NextAuth handler using the defined authentication options
