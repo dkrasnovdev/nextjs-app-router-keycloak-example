@@ -10,6 +10,11 @@ export const authOptions: AuthOptions = {
       clientId: process.env.OIDC_CLIENT_ID || "",
       clientSecret: process.env.OIDC_CLIENT_SECRET || "",
       issuer: process.env.OIDC_ISSUER,
+      // Modify the user profile
+      profile: (profile) => {
+        profile.id = profile.sub;
+        return profile;
+      },
     }),
   ],
 };
