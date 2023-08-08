@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js App with Keycloak Integration
+
+This is a sample Next.js application that demonstrates how to integrate Keycloak for authentication using NextAuth with App router. The app allows to upload files to a storage service and showcases how to manage user sessions and authentication using Keycloak.
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/dkrasnovdev/nextjs-app-keycloak-example.git
+   cd nextjs-app-keycloak-example
+   ```
+
+2. Install the required dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Copy the `.env.example` file and rename it to `.env`. Fill in the required environment variables with appropriate values.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+cp .env.example .env
+# Edit .env file with your configuration
 ```
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+2. Open your browser and visit `http://localhost:3000`.
 
-To learn more about Next.js, take a look at the following resources:
+3. You can sign in using the provided Keycloak sign-in button. Once signed in, you'll have access to the file upload functionality.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Use the file upload form to upload files to the storage service.
